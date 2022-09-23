@@ -13,3 +13,8 @@ $response = [];
 while($a = $array->fetch_assoc()){
     $response[] = $a;
 }
+
+$json = json_encode($response);
+echo $json;
+
+?>
