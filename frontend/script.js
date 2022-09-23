@@ -5,3 +5,14 @@ window.onload=(loaded) => {
 
         $.getJSON("http://localhost/bootstrap-news/backend/news.php", function(data) {
         console.log(data);
+
+        $.each(data, function(i, field){
+            $(card_section).append(field.new);
+        });
+
+          });
+
+
+
+    });
+};
